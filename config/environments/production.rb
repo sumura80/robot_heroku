@@ -21,14 +21,17 @@ Rails.application.configure do
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
+
+  #http://techblog.kyamanak.com/entry/2017/10/13/003818に基づき、下記の内容を変更しても良い。
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
+  
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
 
   #S3 を使う設定をする 2018年8月22日
   #http://blog.kakeragames.com/2016/02/03/heroku-paperclip-s3.html
