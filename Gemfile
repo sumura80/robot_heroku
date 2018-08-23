@@ -32,11 +32,16 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'devise', '~> 4.4', '>= 4.4.3'
-gem 'paperclip', '~> 6.0'
+#gem 'paperclip', '~> 6.0'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'jquery-rails'
 gem 'searchkick', '~> 3.1'
 gem 'faker', '~> 1.9', '>= 1.9.1'
+
+#2018年8月22日に下記の2行を追加
+gem 'paperclip', :git => 'https://github.com/thoughtbot/paperclip.git'
+gem 'aws-sdk', '>= 2.0.0'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

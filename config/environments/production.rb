@@ -30,6 +30,27 @@ Rails.application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
+  #S3 を使う設定をする 2018年8月22日
+  #http://blog.kakeragames.com/2016/02/03/heroku-paperclip-s3.html
+
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :bucket => ENV['AMAZON_S3_BUCKET_NAME'],
+  :s3_region => ENV['AMAZON_S3_REGION'],
+  #:s3_host_name => ENV['AMAZON_S3_HOST_NAME'],
+  :s3_credentials => {
+    :access_key_id => ENV['AMAZON_ACCESS_KEY_ID'],
+    :secret_access_key => ENV['AMAZON_SECRET_ACCESS_KEY']
+  }
+}
+
+
+
+
+
+
+
+
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
