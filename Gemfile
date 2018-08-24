@@ -37,9 +37,10 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'jquery-rails'
 gem 'searchkick', '~> 3.1'
 gem 'faker', '~> 1.9', '>= 1.9.1'
-
+gem 'carrierwave', '~> 1.2', '>= 1.2.3'
+  
 #2018年8月22日に下記の2行を追加
-gem 'paperclip', :git => 'https://github.com/thoughtbot/paperclip.git'
+#gem 'paperclip', :git => 'https://github.com/thoughtbot/paperclip.git'
 gem 'aws-sdk', '>= 2.0.0'
 
 

@@ -16,7 +16,7 @@
       <% @listings.each do |listing| %>
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail index_thumb">
-            <%= link_to (image_tag listing.image.url(:medium), class:"image"), listing  %>
+            <%= link_to (image_tag(listing.image.url,class:"image")), listing  %>
           </div>
         </div>
 
