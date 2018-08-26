@@ -16,24 +16,28 @@
       <% @listings.each do |listing| %>
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail index_thumb">
-            <%= link_to (image_tag listing.image.url(:medium), class:"image"), listing  %>
+            <!-- 追加箇所 開始 -->
+              <% if listing.image? %>
+                  <%= link_to (image_tag listing.image.url, class:"image"), listing  %>
+              <% end %>
+            <!-- 追加箇所 終了 -->
           </div>
         </div>
 
       <% end %>
     </div>
   </div>
- 
+
  <br>
 <hr>
 <br>
 <section class="text-center">
       <div class="container">
-        
+
         <div class="row">
           <h2 style="text-align: center; color:white;">世界の開発者から声が届いています。</h2>
           <div class="col-sm-12 col-md-4 professor_profile">
-            <div class="professor_jpeg">               
+            <div class="professor_jpeg">
                <%= link_to image_tag('https://s3-ap-northeast-1.amazonaws.com/robot-world-storage/professor_01.jpg',  class: 'img-circle'),  common_path %>
               <!-- <img class="img-circle" src="/assets/pic1.jpeg" alt=""> -->
               <h4>クリストファーE 工学博士.</h4>
@@ -72,7 +76,7 @@
 
 
 <div class="row">
- 
+
   <div class="col-sm-6 col-md-3">
     <div class="thumbnail">
       <img src="<%= @robots %> ">
@@ -95,5 +99,5 @@
   </div>
 </div>
 </div>
- 
+
 <br><br><br>

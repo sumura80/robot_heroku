@@ -2,7 +2,9 @@
   <div class="panel-body">
     <div class="row">
       <div class="col-md-4">
-        <%= image_tag @listing.image.url(:medium) %><br><br>
+        <!-- 変更箇所 終了 -->
+        <%= image_tag @listing.image.url %><br><br>
+        <!-- 変更箇所 終了 -->
         <div class="star-rating" data-score= <%= @avg_review %> ></div>
         <em><%= "#{@review.length} reviews" %></em>
 
@@ -59,9 +61,9 @@
   </div>
 </div>
 <br><br>
- 
 
-<!-- 
+
+<!--
 下記のサイトから持ってきた
 https://stackoverflow.com/questions/35167149/im-using-raty-js-star-rating-system-how-do-i-show-the-equivalent-integer-value
 star-ratingの部分を変更した
@@ -77,5 +79,3 @@ star-ratingの部分を変更した
         }
     });
 </script>
- 
-
