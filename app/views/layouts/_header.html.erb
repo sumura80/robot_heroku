@@ -24,11 +24,7 @@
           <li><%= link_to "ログイン",new_user_session_path %></li>
         <% end %>
       </ul>
-       <%= form_tag search_listings_path, method: :get, class: "navbar-form navbar-right" ,role: "search" do %>
-       <p><%= text_field_tag :search , params[:search], class: "form-control" %>
-            <%= submit_tag "ロボット検索", name: nil, class: "btn btn-default" %> 
-        </p>
-       <% end %>
+       
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
