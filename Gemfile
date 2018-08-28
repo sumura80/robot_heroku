@@ -38,6 +38,7 @@ gem 'jquery-rails'
 gem 'faker', '~> 1.9', '>= 1.9.1'
 gem 'carrierwave', '~> 1.2', '>= 1.2.3'
 gem 'mini_magick', '~> 4.8'
+gem "paperclip", "~> 4.2"
 
 #2018年8月22日に下記の2行を追加
 #gem 'paperclip', :git => 'https://github.com/thoughtbot/paperclip.git'
