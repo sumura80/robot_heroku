@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Name: Robot World
+ 
+## Overview: 
+自分が製造したロボットを販売できるサイト。
+ユーザーはスターで５段階評価ができ、コメントも登録できる。
+deviseを使用し、ユーザー登録もできる。
 
-Things you may want to cover:
 
-* Ruby version
+## Function:
+使用したGems:
+```
+1. devise
+2. bootstrap-sass
+3. carrierwave(mini_magick)
+4. jquery-rails
+5. fog
+6. faker
+7. aws-sdk
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Description
+Rails: 5.1.6
+Database: PostgreSQL
